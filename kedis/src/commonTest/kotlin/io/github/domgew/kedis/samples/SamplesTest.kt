@@ -16,6 +16,9 @@ class SamplesTest {
     @Test
     fun `PipelineSamples simple`() =
         testSample(PipelineSamples::simple)
+    @Test
+    fun `ListSamples simple`() =
+        testSample(ListSamples::simple)
 
     private fun testSample(
         sample: suspend (KedisClient) -> Unit,
